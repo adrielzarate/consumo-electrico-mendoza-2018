@@ -107,7 +107,7 @@ function d3Draw(data) {
         .enter()
         .append('text')
         .text(function(d) {
-            return d.date + ' - ' + d.temp;
+            return d.pow + 'KW';
         })
         .attr('x', function(d) {
             const parsedDate = d.date.split('/');
